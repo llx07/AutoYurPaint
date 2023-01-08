@@ -5,7 +5,7 @@ npm install
 
 ## 使用方法
 ### 准备图像
-`./mantain.png` 为你的图像文件（缩放后）
+`./maintain.png` 为你的图像文件（缩放后）
 ```bash
 python gen.py
 ```
