@@ -1,12 +1,30 @@
 import os
 from PIL import Image
 import numpy as np
+import argparse
 
-img_path = "maintain.png"
+parser = argparse.ArgumentParser(description="Change the picture to JS")
+parser.add_argument("path")
+parser.add_argument("--width",type=int)
+parser.add_argument("--height",type=int)
+
+args = parser.parse_args()
+
+img_path = args.path
+
 
 img = Image.open(img_path)
 if img.mode!="RGB":
     img=img.convert("RGB")
+
+if args.width is not None and args.height is not None:
+    img=img.resize((args.width,args.height))
+elif args.width is not None:
+    img=img.resize((args.width,int(img.size[1]*args.width/img.size[0])))
+elif args.height is not None:
+    img=img.resize((int(img.size[0]*args.height/img.size[1]),args.height))
+
+
 img=np.array(img)
 
 out = "data.js"
