@@ -33,10 +33,10 @@ options:
 
 `./main.js`为主文件
 
-需要修改的地方,第22-23行，为图片左上角地址。若图片大小超过画板则行为未定义。
+需要修改的地方,第37-38行，为图片左上角地址。若图片大小超过画板则行为未定义。
 ```js
-const startX = 50
-const startY = 400;
+const startX = <X>
+const startY = <Y>;
 ```
 
 `node main.js` 运行

@@ -24,7 +24,7 @@ elif args.width is not None:
 elif args.height is not None:
     img=img.resize((int(img.size[0]*args.height/img.size[1]),args.height))
 
-
+print("[INFO]Size is ({},{})".format(*img.size))
 img=np.array(img)
 
 out = "data.js"

@@ -35,7 +35,7 @@ const W = 1000;
 const H = 600;
 let wsList = []
 const startX = 20
-const startY = 480;
+const startY = 440;
 const picY = data.length;
 const picX = data[0].length;
 
