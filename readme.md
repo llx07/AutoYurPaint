@@ -1,3 +1,7 @@
+## 环境需求
+- node.js
+- python(PIL,numpy)
+
 ## 安装
 ```bash
 npm install

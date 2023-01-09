@@ -1,4 +1,8 @@
 maintain.*
 token.txt
 data*.js
+*.jpg
+*.png
+*.bmp
+*.jfif
 node_modules/
